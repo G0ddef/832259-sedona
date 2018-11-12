@@ -3,7 +3,8 @@
 * Студент: [Антон Трубецкой](https://up.htmlacademy.ru/htmlcss/23/user/832259).
 * Наставник: `Андрей Островский`.
 *Ссылка на профиль: GitHub - https://github.com/grandmaus
-                    ВК - https://vk.com/andrey_maus 
+                    ВК - https://vk.com/andrey_maus
+                    Академия - https://htmlacademy.ru/profile/grandmaus
 
 ---
 
