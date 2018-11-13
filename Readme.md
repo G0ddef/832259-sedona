@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Антон Трубецкой](https://up.htmlacademy.ru/htmlcss/23/user/832259).
-* Наставник: [Андрей Островский]. (https://htmlacademy.ru/profile/grandmaus)
+* Наставник: [Андрей Островский] (https://htmlacademy.ru/profile/grandmaus).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
