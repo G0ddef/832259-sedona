@@ -9,7 +9,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-logo">
-          <img src="main-logo.svg" width="25" height="25" alt="Логотип сайта седона">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта седона">
         </a>
         <ul class="site-navigation">
           <li>
@@ -29,13 +29,16 @@
     </header>
     <main class="container">
       <div class="site-logo">
-        <img src="site-logo.svg" width="120" height="140" alt="Главный логотип сайта Седона">
+        <img src="img/welcome.svg" width="1200" height="352" alt="Главный логотип сайта Седона">
       </div>
       <div class="features-sedona">
         <h1>Cедона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <section class="features">
+
+        <h2 class="vissualy-hidden">Преимущества Седоны</h2>
+
         <ul class="features-list">
           <li class="features-item">
             <div class="features-number">
@@ -44,7 +47,7 @@
               <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="features-img">
-              <img src="house.png" width="200" height="50" alt="Настоящий городок">
+              <img src="img/house.jpg" width="800" height="256" alt="Настоящий городок">
             </div>
             <ul class="services">
               <li>
@@ -63,7 +66,7 @@
           </li>
           <li class="features-item">
             <div class="features-img">
-                <img src="rock.png" width="200" height="50" alt="Мост дьявола">
+                <img src="img/rock.jpg" width="800" height="256" alt="Мост дьявола">
             </div>
             <div class="features-number">
               <h3>Там есть мост дьявола</h3>
@@ -92,17 +95,37 @@
           </li>
         </ul>
       </section>
-      <div class="interesed-offer">
+      <div class="interesed-offer" aria-label="Укажите преполагаемые даты поездки, если вас заинтересовала Седона">
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки, <span> и мы покажем вам лучшие предложение гостиниц в Седоне </span></p>
       </div>
       <section class="find-hotels">
-        <h2>Поиск гостиницы в Седоне</h2>
-          <!--Форма-->
+        <a href="date.html" aria-label="Поиск гостиницы"><h2>Поиск гостиницы в Седоне</h2></a>         <!--буду поп-ап(ом) делать-->
+          <form class="estimated-dates" action="" method="POST">
+            <p>
+              <label for="arrival-date">Дата заезда:</label>
+              <input type="date" id="arrival-date" value="2017-04-24" min="2017-04-22" max="2018-04-22" name="calendar">
+            </p>
+            <p>
+              <label for="date-departure">Дата выезда:</label>
+              <input type="date" id="departrue-date" value="2017-07-04" min="2017-04-22" max="2018-04-22" name="calendar">
+            </p>
+            <p>
+              <label for="adults">Взрослые:</label>
+              <input type="number" min="1" max="10" value="2" id="adults" placeholder="Количество взрослых">  
+            </p>
+            <p>
+              <label for="children">Дети:</label>
+              <input type="number" min="0" max="10" value="0" id="children" placeholder="Количество детей">
+            </p>
+            <p class="button">
+              <a href="results.html" aria-label="Поиск гостиницы на ближайшие даты">Найти</a>
+            </p>
+          </form>
       </section>
       <section class="map">
         <p>
-          <img src="map.jpg" width="300" height="250" alt="Как к нам добраться">
+          <img src="img/map.jpg" width="1200" height="593" alt="Как к нам добраться: Седона">
         </p>
       </section>
     </main>
@@ -123,7 +146,7 @@
         </div>
         <p class="created">
           <b>Website by</b>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy"> Создано HTML-Academy</a>
         </p>
       </footer>  
   </body>

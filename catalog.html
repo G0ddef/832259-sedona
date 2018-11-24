@@ -9,7 +9,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-logo">
-          <img src="main-logo.svg" width="25" height="25" alt="Логотип сайта седона">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта седона">
         </a>
         <ul class="site-navigation">
           <li>
@@ -29,11 +29,60 @@
     </header>
     <main class="container">
       <section class="filters">
-        <!--Форма-->
+      
+        <h2 class="vissualy-hidden">Фильтр поиска гостиниц</h2>
+
+        <form class="hotel-filter" action="echo" method="GET">
+          <fieldset>
+            <legend>Инфраструктура</legend>
+            <ul class="required-options">
+              <li class="required-item">
+                <input type="checkbox" class="input-type input-checkbox" name="Pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li class="required-item">
+                <input type="checkbox" class="input-type input-checkbox" name="Parking" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li class="required-item">
+                <input type="checkbox" class="input-type input-checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">WI-FI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <ul class="type-of-house">
+              <li class="type-item">
+                <input type="checkbox" class="input-type input-checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li class="type-item">
+                <input type="checkbox" class="input-type input-checkbox" name="motel" id="motel" checked>
+                <label for="hotel">Мотель</label>
+              </li>
+              <li class="type-item">
+                <input type="checkbox" class="input-type input-checkbox" name="apartaments" id="apartaments" checked>
+                <label for="hotel">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+              <ul class="output-area">
+                <li class="output" aria-label="Цена от">От 0</li>
+                <li class="output" aria-label="Цена до">До 3000</li>
+              </ul>
+              <!--Ползунки выбора диапазона, хз как сделать :(-->
+          </fieldset>
+          <button type="submit" class="submit">Показать</button>
+        </form>
       </section>
       <div class="sorting">
-        <b>Найдено: 3</b>
-        <span>Сортировка:</span>
+
+        <h2 class="vissualy-hidden">Сортировка гостиниц</h2>
+
+        <b aria-label="Количество найденых гостиниц">Найдено: 3</b>
+        <span aria-label="Параметры сортировки">Сортировка:</span>
         <ul class="sorting-options">
           <li class="sorting-item">
             <a href="#">По цене</a>
@@ -47,17 +96,20 @@
         </ul>
       </div>
       <section class="find-results">
+
+        <h2 class="vissualy-hidden">Результаты поиска</h2>
+        
         <ul class="catalog">
           <li class="catalog-item">
-            <h3>
-              <a href="amara.html">Amara resort & spa</a>
-            </h3>
-            <a href="photo-amara.html">
-              <img src="amara.jpg" width="40" height="40" alt="Внешний вид гостиницы Амара">
+            <a href="amara.html">
+              <h3>Amara resort & spa</h3>
+              <p class="hotel-image">
+                <img src="img/hotel.jpg" width="135" height="90" alt="Внешний вид гостиницы Амара">
+              </p>
             </a>
             <p class="type-house">
-              <span>Гостиница</span> 
-              <span>От 4000р.</span>
+              <span aria-label="Тип жилья: Гостиница">Гостиница</span> 
+              <span aria-label="Цена от 4000р">От 4000р.</span>
             </p>
             <p class="description-hotel">
               <a class="button blue" href="description.html">Подробнее</a>
@@ -66,15 +118,15 @@
             <p class="rating">Рейтинг:8,5</p>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="amara.html">Desert Quail Inn</a>
-            </h3>
-            <a href="photo-desert.html">
-              <img src="desert.jpg" width="40" height="40" alt="Внешний вид гостиницы Дезерт">
+            <a href="desert.html">
+              <h3>Desert Quail Inn</h3>
+              <p class="hotel-image">
+                <img src="img/motel.jpg" width="135" height="90" alt="Внешний вид гостиницы Дезерт">
+              </p>
             </a>
             <p class="type-house">
-              <span>Мотель</span> 
-              <span>От 3000р.</span>
+              <span aria-label="Типа жилья: Мотель">Мотель</span> 
+              <span aria-label="Цена от 3000р">От 3000р.</span>
             </p>
             <p class="description-hotel">
               <a class="button blue" href="description.html">Подробнее</a>
@@ -83,15 +135,15 @@
             <p class="rating">Рейтинг:8,9</p>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="amara.html">Villas at Poco Diablo</a>
-            </h3>
-            <a href="photo-amara.html">
-              <img src="amara.jpg" width="40" height="40" alt="Внешний вид гостиницы Амара">
+            <a href="villas.html">
+              <h3>Villas at Poco Diablo</h3>
+              <p class="hotel-image">
+                <img src="img/apartaments.jpg" width="135" height="90" alt="Внешний вид гостиницы Амара">
+              </p>
             </a>
             <p class="type-house">
-              <span>Апартаменты</span> 
-              <span>От 2000р.</span>
+              <span aria-label="Тип жилья: Апартаменты">Апартаменты</span> 
+              <span aria-label="Цена от 2000р">От 2000р.</span>
             </p>
             <p class="description-hotel">
               <a class="button blue" href="description.html">Подробнее</a>
@@ -113,9 +165,7 @@
       </div>
       <p class="created">
         <b>Website by</b>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy">
-          
-        </a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy"> Создано HTML-Academy</a>
       </p>
     </footer>  
   </body>
