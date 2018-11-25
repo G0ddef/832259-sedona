@@ -51,26 +51,33 @@
             </ul>
           </fieldset>
           <fieldset>
-            <ul class="type-of-house">
-              <li class="type-item">
-                <input type="checkbox" class="input-type input-checkbox" name="hotel" id="hotel" checked>
-                <label for="hotel">Гостиница</label>
-              </li>
-              <li class="type-item">
-                <input type="checkbox" class="input-type input-checkbox" name="motel" id="motel" checked>
-                <label for="hotel">Мотель</label>
-              </li>
-              <li class="type-item">
-                <input type="checkbox" class="input-type input-checkbox" name="apartaments" id="apartaments" checked>
-                <label for="hotel">Апартаменты</label>
-              </li>
-            </ul>
+            <legend>Тип жилья:</legend>
+              <ul class="type-of-house">
+                <li class="type-item">
+                  <input type="checkbox" class="input-type input-checkbox" name="hotel" id="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+                </li>
+                <li class="type-item">
+                  <input type="checkbox" class="input-type input-checkbox" name="motel" id="motel" checked>
+                  <label for="hotel">Мотель</label>
+                </li>
+                <li class="type-item">
+                  <input type="checkbox" class="input-type input-checkbox" name="apartaments" id="apartaments" checked>
+                  <label for="hotel">Апартаменты</label>
+                </li>
+              </ul>
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
               <ul class="output-area">
-                <li class="output" aria-label="Цена от">От 0</li>
-                <li class="output" aria-label="Цена до">До 3000</li>
+                <li class="output">
+                  <label class="vissualy-hidden" for="price-before">От</label>
+                  <input type="text" id="price-before" value="0">
+                </li>
+                <li class="output">
+                  <label class="vissualy-hidden" for="price-after">До</label>
+                  <input type="text" id="price-after" value="3000">
+                </li>
               </ul>
               <!--Ползунки выбора диапазона, хз как сделать :(-->
           </fieldset>
@@ -165,7 +172,7 @@
       </div>
       <p class="created">
         <b>Website by</b>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy"> Создано HTML-Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="created-by"> Создано HTML-Academy</a>
       </p>
     </footer>  
   </body>
