@@ -11,12 +11,6 @@ body {
     background-color: #f2f2f2;    
 }
 
-.inner-page {
-    color: #000000;
-
-    background-color:#f2f2f2;
-}
-
 a {
     text-decoration: none;
 }
@@ -25,7 +19,7 @@ a {
     color:#000000;
     font-size: 14px;
     line-height: 26px;
-    font-weight: bold;
+    font-weight: 700;
 
     background-color: #ffffff;
 }
@@ -38,7 +32,7 @@ a {
     color:#000000;
     font-size: 14px;
     line-height: 26px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .site-navigation a:hover,
@@ -57,19 +51,19 @@ a {
     background-position: center;
 }
 
-.features-sedona {
+.reasons {
     text-align: center;
 
     background-color:#ffffff;
 }
 
-.features-sedona h1 {
+.reasons h1 {
     font-size: 21px;
     line-height: 26px;
     color: #000000;
 }
 
-.features-sedona p {
+.reasons p {
     font-size: 14px;
     line-height: 26px;
     color: #333333;
@@ -88,13 +82,13 @@ a {
 .features-item h3 {
     font-size: 21px;
     line-height: 21px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .features-item p {
     font-size: 14px;
     line-height: 21px;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .features-item:first-child li {
@@ -127,7 +121,7 @@ a {
 .interesed-offer b {
     font-size: 30px;
     line-height: 36px;
-    font-weight: bold;
+    font-weight: 700;
     color: #000000;
 }
 
@@ -135,14 +129,14 @@ a {
 .interesed-offer span {
     font-size: 14px;
     line-height: 24px;
-    font-weight: normal;
+    font-weight: 400;
     color: #333333;
 }
 
 .button {
     font-size: 21px;
     line-height: 26px;
-    font-weight: bold;
+    font-weight: 700;
     color: #ffffff;
     text-align: center;
 }
@@ -184,7 +178,7 @@ a {
 .find-item {
     font-size: 14px;
     line-height: 26px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .find-item input {
@@ -228,14 +222,14 @@ a {
     color:#ffffff;
     font-size: 16px;
     line-height: 21px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .filters ul {
     color: #ffffff;
     font-size: 14px;
     line-height: 21px;
-    font-weight: normal;
+    font-weight: 400;
     list-style: none;
 }
 
@@ -264,28 +258,33 @@ a {
     color: #000000;
     font-size: 21px;
     line-height: 26px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .sorting span {
     color: #000000;
     font-size: 12px;
     line-height: 18px;
-    font-weight: normal;
+    font-weight: 700;
 }
 
 .sorting-options {
     font-size: 12px;
     line-height: 18px;
-    font-weight: normal;
+    font-weight: 700;
     list-style: none;
 }
 
-.sorting-options .sorting-item-current {
+.sorting-item:first-of-type a {
     color: #81b3d2;
+
+    border: none;
 }
-.sorting-options .sorting-item-current:active {
+
+.sorting-item:first-of-type a:active {
     color: #000000;
+
+    border: none;
 }
 
 .sorting-item a{
@@ -319,7 +318,7 @@ a {
     color: #000000;
     font-size: 21px;
     line-height: 26px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .catalog-item > a:hover,
@@ -335,14 +334,14 @@ a {
     color: #333333;
     font-size: 14px;
     line-height: 21px;
-    font-weight: normal;
+    font-weight: 700;
 }
 
 .catalog-item .rating {
     color: #666666;
     font-size: 14px;
     line-height: 21px;
-    font-weight: normal;
+    font-weight: 400;
 
     background-color: #f2f2f2;
 }
@@ -351,7 +350,7 @@ a {
     color: #ffffff;
     font-size: 14px;
     line-height: 21px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
 }
@@ -417,7 +416,7 @@ a {
     color:#000000;
     font-size: 21px;
     line-height: 26px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -442,7 +441,7 @@ a {
     color: #000000;
     font-size: 14px;
     line-height: 26px;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .created .copyright {
