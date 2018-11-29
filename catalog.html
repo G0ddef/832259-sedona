@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-logo">
@@ -22,7 +22,7 @@
             <a href="map.html">Карта штата</a>
           </li>
           <li class="active-link">
-            <a href="catalog.html">Гостиницы</a>
+            <a>Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -52,16 +52,16 @@
           </fieldset>
           <fieldset>
             <legend>Тип жилья:</legend>
-              <ul class="type-of-house">
-                <li class="type-item">
+              <ul class="required-options">
+                <li class="required-item">
                   <input type="checkbox" class="input-type input-checkbox" name="hotel" id="hotel" checked>
                   <label for="hotel">Гостиница</label>
                 </li>
-                <li class="type-item">
+                <li class="required-item">
                   <input type="checkbox" class="input-type input-checkbox" name="motel" id="motel" checked>
                   <label for="hotel">Мотель</label>
                 </li>
-                <li class="type-item">
+                <li class="required-item">
                   <input type="checkbox" class="input-type input-checkbox" name="apartaments" id="apartaments" checked>
                   <label for="hotel">Апартаменты</label>
                 </li>
@@ -81,7 +81,7 @@
               </ul>
               <!--Ползунки выбора диапазона, хз как сделать :(-->
           </fieldset>
-          <button type="submit" class="submit">Показать</button>
+          <button type="submit" class="btn view">Показать</button>
         </form>
       </section>
       <div class="sorting">
@@ -91,8 +91,8 @@
         <b aria-label="Количество найденых гостиниц">Найдено: 3</b>
         <span aria-label="Параметры сортировки">Сортировка:</span>
         <ul class="sorting-options">
-          <li class="sorting-item">
-            <a href="#">По цене</a>
+          <li class="sorting-item-current">
+            <a>По цене</a>
           </li>
           <li class="sorting-item">
             <a href="#">По типу</a>
@@ -106,7 +106,7 @@
 
         <h2 class="vissualy-hidden">Результаты поиска</h2>
         
-        <ul class="catalog">
+        <ul class="catalog-list">
           <li class="catalog-item">
             <a href="amara.html">
               <h3>Amara resort & spa</h3>
@@ -119,8 +119,8 @@
               <span aria-label="Цена от 4000р">От 4000р.</span>
             </p>
             <p class="description-hotel">
-              <a class="button blue" href="description.html">Подробнее</a>
-              <a class="button gray" href="booking.html">Забронировать</a>
+              <a class="btn blue" href="description.html">Подробнее</a>
+              <a class="btn gray" href="booking.html">Забронировать</a>
             </p>
             <p class="rating">Рейтинг:8,5</p>
           </li>
@@ -136,8 +136,8 @@
               <span aria-label="Цена от 3000р">От 3000р.</span>
             </p>
             <p class="description-hotel">
-              <a class="button blue" href="description.html">Подробнее</a>
-              <a class="button gray" href="booking.html">Забронировать</a>
+              <a class="btn blue" href="description.html">Подробнее</a>
+              <a class="btn gray" href="booking.html">Забронировать</a>
             </p>
             <p class="rating">Рейтинг:8,9</p>
           </li>
@@ -153,15 +153,15 @@
               <span aria-label="Цена от 2000р">От 2000р.</span>
             </p>
             <p class="description-hotel">
-              <a class="button blue" href="description.html">Подробнее</a>
-              <a class="button gray" href="booking.html">Забронировать</a>
+              <a class="btn blue" href="description.html">Подробнее</a>
+              <a class="btn gray" href="booking.html">Забронировать</a>
             </p>
             <p class="rating">Рейтинг:9,2</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="inner-footer">
       <p class="hashtag">#visitsedona</p>
       <div class="footer-social">
         <ul>
