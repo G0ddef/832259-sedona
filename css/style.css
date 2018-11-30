@@ -275,20 +275,24 @@ a {
     list-style: none;
 }
 
-.sorting-item:first-of-type a {
+.sorting-item {
+    color: #cacaca;
+}
+
+.sorting-item > .current {
     color: #81b3d2;
 
     border: none;
 }
 
-.sorting-item:first-of-type a:active {
+.sorting-item > .current:active {
     color: #000000;
 
     border: none;
-}
+} 
 
 .sorting-item a{
-    color: #cacaca;
+    color: inherit;
 
     border-bottom: 1px dashed #81b3d2;
 }
@@ -304,7 +308,7 @@ a {
     color: #000000;
 
     border: none;
-}
+} 
 
 .catalog-list {
     list-style: none;
