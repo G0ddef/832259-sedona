@@ -71,109 +71,113 @@
             <legend>Стоимость в сутки (Р):</legend>
               <ul class="output-area">
                 <li class="output">
-                  <label class="vissualy-hidden" for="price-before">От</label>
+                  <label for="price-before">От </label>
                   <input type="text" id="price-before" value="0">
                 </li>
                 <li class="output">
-                  <label class="vissualy-hidden" for="price-after">До</label>
+                  <label for="price-after">До </label>
                   <input type="text" id="price-after" value="3000">
                 </li>
               </ul>
               <!--Ползунки выбора диапазона, хз как сделать :(-->
           </fieldset>
-          <button type="submit" class="btn view">Показать</button>
+          <button type="submit" class="btn-view">Показать</button>
         </form>
       </section>
-      <div class="sorting">
+      <div class="container-catalog">
+        <div class="sorting">
 
-        <h2 class="vissualy-hidden">Сортировка гостиниц</h2>
+          <h2 class="vissualy-hidden">Сортировка гостиниц</h2>
 
-        <b aria-label="Количество найденых гостиниц">Найдено: 3</b>
-        <span aria-label="Параметры сортировки">Сортировка:</span>
-        <ul class="sorting-options">
-          <li class="sorting-item">
-            <a class="current" href="#">По цене</a>
-          </li>
-          <li class="sorting-item">
-            <a href="#">По типу</a>
-          </li>
-          <li class="sorting-item">
-            <a href="#">По рейтингу</a>
-          </li>
-        </ul>
+          <b aria-label="Количество найденых гостиниц">Найдено: 3</b>
+          <span aria-label="Параметры сортировки">Сортировка:</span>
+          <ul class="sorting-options">
+            <li class="sorting-item">
+              <a class="current" href="#">По цене</a>
+            </li>
+            <li class="sorting-item">
+              <a href="#">По типу</a>
+            </li>
+            <li class="sorting-item">
+              <a href="#">По рейтингу</a>
+            </li>
+          </ul>
+        </div>
+        <section class="find-results">
+
+          <h2 class="vissualy-hidden">Результаты поиска</h2>
+          
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <a href="amara.html">
+                <h3>Amara resort & spa</h3>
+                <p class="hotel-image">
+                  <img src="img/hotel.jpg" width="135" height="90" alt="Внешний вид гостиницы Амара">
+                </p>
+              </a>
+              <p class="type-house">
+                <span aria-label="Тип жилья: Гостиница">Гостиница</span> 
+                <span aria-label="Цена от 4000р">От 4000р.</span>
+              </p>
+              <p class="description-hotel">
+                <a class="btn-blue" href="description.html">Подробнее</a>
+                <a class="btn-gray" href="booking.html">Забронировать</a>
+              </p>
+              <p class="rating">Рейтинг:8,5</p>
+            </li>
+            <li class="catalog-item">
+              <a href="desert.html">
+                <h3>Desert Quail Inn</h3>
+                <p class="hotel-image">
+                  <img src="img/motel.jpg" width="135" height="90" alt="Внешний вид гостиницы Дезерт">
+                </p>
+              </a>
+              <p class="type-house">
+                <span aria-label="Типа жилья: Мотель">Мотель</span> 
+                <span aria-label="Цена от 3000р">От 3000р.</span>
+              </p>
+              <p class="description-hotel">
+                <a class="btn-blue" href="description.html">Подробнее</a>
+                <a class="btn-gray" href="booking.html">Забронировать</a>
+              </p>
+              <p class="rating">Рейтинг:8,9</p>
+            </li>
+            <li class="catalog-item">
+              <a href="villas.html">
+                <h3>Villas at Poco Diablo</h3>
+                <p class="hotel-image">
+                  <img src="img/apartaments.jpg" width="135" height="90" alt="Внешний вид гостиницы Амара">
+                </p>
+              </a>
+              <p class="type-house">
+                <span aria-label="Тип жилья: Апартаменты">Апартаменты</span> 
+                <span aria-label="Цена от 2000р">От 2000р.</span>
+              </p>
+              <p class="description-hotel">
+                <a class="btn-blue" href="description.html">Подробнее</a>
+                <a class="btn-gray" href="booking.html">Забронировать</a>
+              </p>
+              <p class="rating">Рейтинг:9,2</p>
+            </li>
+          </ul>
+        </section>
       </div>
-      <section class="find-results">
-
-        <h2 class="vissualy-hidden">Результаты поиска</h2>
-        
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <a href="amara.html">
-              <h3>Amara resort & spa</h3>
-              <p class="hotel-image">
-                <img src="img/hotel.jpg" width="135" height="90" alt="Внешний вид гостиницы Амара">
-              </p>
-            </a>
-            <p class="type-house">
-              <span aria-label="Тип жилья: Гостиница">Гостиница</span> 
-              <span aria-label="Цена от 4000р">От 4000р.</span>
-            </p>
-            <p class="description-hotel">
-              <a class="btn blue" href="description.html">Подробнее</a>
-              <a class="btn gray" href="booking.html">Забронировать</a>
-            </p>
-            <p class="rating">Рейтинг:8,5</p>
-          </li>
-          <li class="catalog-item">
-            <a href="desert.html">
-              <h3>Desert Quail Inn</h3>
-              <p class="hotel-image">
-                <img src="img/motel.jpg" width="135" height="90" alt="Внешний вид гостиницы Дезерт">
-              </p>
-            </a>
-            <p class="type-house">
-              <span aria-label="Типа жилья: Мотель">Мотель</span> 
-              <span aria-label="Цена от 3000р">От 3000р.</span>
-            </p>
-            <p class="description-hotel">
-              <a class="btn blue" href="description.html">Подробнее</a>
-              <a class="btn gray" href="booking.html">Забронировать</a>
-            </p>
-            <p class="rating">Рейтинг:8,9</p>
-          </li>
-          <li class="catalog-item">
-            <a href="villas.html">
-              <h3>Villas at Poco Diablo</h3>
-              <p class="hotel-image">
-                <img src="img/apartaments.jpg" width="135" height="90" alt="Внешний вид гостиницы Амара">
-              </p>
-            </a>
-            <p class="type-house">
-              <span aria-label="Тип жилья: Апартаменты">Апартаменты</span> 
-              <span aria-label="Цена от 2000р">От 2000р.</span>
-            </p>
-            <p class="description-hotel">
-              <a class="btn blue" href="description.html">Подробнее</a>
-              <a class="btn gray" href="booking.html">Забронировать</a>
-            </p>
-            <p class="rating">Рейтинг:9,2</p>
-          </li>
-        </ul>
-      </section>
     </main>
     <footer class="inner-footer">
-      <p class="hashtag">#visitsedona</p>
-      <div class="footer-social">
-        <ul>
-          <li><a href="twitter.com" class="social-button">Twitter</a></li>
-          <li><a href="fb.com" class="social-button">Facebook</a></li>
-          <li><a href="youtube.com" class="social-button">Youtube</a></li>
-        </ul>
+      <div class="container">
+        <p class="hashtag">#visitsedona</p>
+        <div class="footer-social">
+          <ul>
+            <li><a href="twitter.com" class="social-button">Twitter</a></li>
+            <li><a href="fb.com" class="social-button">Facebook</a></li>
+            <li><a href="youtube.com" class="social-button">Youtube</a></li>
+          </ul>
+        </div>
+        <p class="created">
+          <b>Website by</b>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright"> Создано HTML-Academy</a>
+        </p>
       </div>
-      <p class="created">
-        <b>Website by</b>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright"> Создано HTML-Academy</a>
-      </p>
     </footer>  
   </body>
 </html>
