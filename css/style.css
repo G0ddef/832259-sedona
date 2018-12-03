@@ -14,9 +14,9 @@ body {
 a {
     text-decoration: none;
 }
-/* * {
+ * {
     outline: 1px solid #000000;
-} */
+} 
 
 /* index*/
 .main-navigation {
@@ -41,10 +41,10 @@ a {
 .container {
     width: 1200px;
     margin: 0 auto;
-
-    background-color: #ffffff;
 }
-
+.inner {
+    background-color: #fefefe;
+}
 .site-navigation {
     display: flex;
     justify-content: space-between;
@@ -344,6 +344,8 @@ a {
 } 
 
 .filters fieldset {
+    padding: 0;
+
     border: none;
 }
 
@@ -570,9 +572,6 @@ fieldset:nth-child(3) {
 
 /* footer */
 .main-footer {
-    width: 1200px;
-    margin: 0 auto;
-
     color: #000000;
 
     background-color: rgba(249, 251, 246, 0.9);
