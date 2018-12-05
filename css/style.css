@@ -239,8 +239,6 @@ a {
 .find-hotels h2 {
     width: 1200px;
     margin: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
 
     text-align: center;
 
@@ -248,13 +246,18 @@ a {
 }
 
 .button-find{
+    display: block;
+    margin: 0 auto;
     padding:30px 139px;
+    width: 290px;
 
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     color: #ffffff;
     text-align: center;
+
+    overflow: hidden;
 
     background-color: #766357;
 }
