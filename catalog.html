@@ -30,10 +30,10 @@
     <main class="container-inner">
       <section class="filters">
       
-        <h2 class="vissualy-hidden">Фильтр поиска гостиниц</h2>
+        <h2 class="visually-hidden">Фильтр поиска гостиниц</h2>
 
         <form class="hotel-filter" action="echo" method="GET">
-          <fieldset>
+          <fieldset class="options">
             <legend>Инфраструктура</legend>
             <ul class="required-options">
               <li class="required-item">
@@ -50,7 +50,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="options">
             <legend>Тип жилья:</legend>
               <ul class="required-options">
                 <li class="required-item">
@@ -67,7 +67,7 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="options">
             <legend>Стоимость в сутки (Р):</legend>
               <ul class="output-area">
                 <li class="output">
@@ -87,7 +87,7 @@
       <div class="container-catalog">
         <div class="sorting">
 
-          <h2 class="vissualy-hidden">Сортировка гостиниц</h2>
+          <h2 class="visually-hidden">Сортировка гостиниц</h2>
 
           <b aria-label="Количество найденых гостиниц">Найдено: 3</b>
           <span aria-label="Параметры сортировки">Сортировка:</span>
@@ -105,7 +105,7 @@
         </div>
         <section class="find-results">
 
-          <h2 class="vissualy-hidden">Результаты поиска</h2>
+          <h2 class="visually-hidden">Результаты поиска</h2>
           
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -116,12 +116,12 @@
                 </p>
               </a>
               <p class="type-house">
-                <span aria-label="Тип жилья: Гостиница">Гостиница</span> 
-                <span aria-label="Цена от 4000р">От 4000р.</span>
+                <span>Гостиница</span> 
+                <span>От 4000р.</span>
               </p>
               <p class="description-hotel">
-                <a class="btn-blue" href="description.html">Подробнее</a>
-                <a class="btn-gray" href="booking.html">Забронировать</a>
+                <a class="btn blue" href="description.html">Подробнее</a>
+                <a class="btn gray" href="booking.html">Забронировать</a>
               </p>
               <p class="rating">Рейтинг:8,5</p>
             </li>
@@ -133,12 +133,12 @@
                 </p>
               </a>
               <p class="type-house">
-                <span aria-label="Типа жилья: Мотель">Мотель</span> 
-                <span aria-label="Цена от 3000р">От 3000р.</span>
+                <span>Мотель</span> 
+                <span>От 3000р.</span>
               </p>
               <p class="description-hotel">
-                <a class="btn-blue" href="description.html">Подробнее</a>
-                <a class="btn-gray" href="booking.html">Забронировать</a>
+                <a class="btn blue" href="description.html">Подробнее</a>
+                <a class="btn gray" href="booking.html">Забронировать</a>
               </p>
               <p class="rating">Рейтинг:8,9</p>
             </li>
@@ -150,12 +150,12 @@
                 </p>
               </a>
               <p class="type-house">
-                <span aria-label="Тип жилья: Апартаменты">Апартаменты</span> 
-                <span aria-label="Цена от 2000р">От 2000р.</span>
+                <span>Апартаменты</span> 
+                <span>От 2000р.</span>
               </p>
               <p class="description-hotel">
-                <a class="btn-blue" href="description.html">Подробнее</a>
-                <a class="btn-gray" href="booking.html">Забронировать</a>
+                <a class="btn blue" href="description.html">Подробнее</a>
+                <a class="btn gray" href="booking.html">Забронировать</a>
               </p>
               <p class="rating">Рейтинг:9,2</p>
             </li>
@@ -168,9 +168,15 @@
         <p class="hashtag">#visitsedona</p>
         <div class="footer-social">
           <ul>
-            <li><a href="twitter.com" class="social-button">Twitter</a></li>
-            <li><a href="fb.com" class="social-button">Facebook</a></li>
-            <li><a href="youtube.com" class="social-button">Youtube</a></li>
+            <li>
+              <a href="twitter.com" class="social-button">Twitter</a>
+            </li>
+            <li>
+              <a href="fb.com" class="social-button">Facebook</a>
+            </li>
+            <li>
+              <a href="youtube.com" class="social-button">Youtube</a>
+            </li>
           </ul>
         </div>
         <p class="created">
