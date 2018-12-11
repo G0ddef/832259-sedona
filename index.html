@@ -94,7 +94,7 @@
                 <li>
                   <h3>Мало туристов</h3>
                   <p>— №5 —</p>
-                  <p>Большинство едет в Гранд Каньон и толпится там</p>
+                  <p>Большинство едет в Гранд Каньон   и толпится там</p>
                 </li>
               </ul>
             </li>
@@ -111,7 +111,7 @@
           <form class="estimated-dates" action="" method="POST">
             <p class="find-item">
               <label for="arrival-date">Дата заезда:</label>
-              <input type="text" name="calendar-arrival" id="arrival-date" placeholder="24 апреля 2017">
+              <input type="text" name="calendar-arrival" id="arrival-date" value="" placeholder="24 апреля 2017">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" fill="#a9a9a9">
               <g id="calendar_1_">
@@ -136,7 +136,7 @@
             </p>
             <p class="find-item">
               <label for="departure-date">Дата выезда:</label>
-              <input type="text" name="calendar-departure" id="date-departure" placeholder="4 июля 2017">
+              <input type="text" name="calendar-departure" id="date-departure" value="" placeholder="4 июля 2017">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" fill="#a9a9a9">
               <g id="calendar_1_">
@@ -161,15 +161,19 @@
             </p>
             <div class="humans">
               <p class="find-item">
+                <b class="minus"></b>
+                <b class="plus"></b>
                 <label for="adults">Взрослые:</label>
-                <input type="text" name="human-adults" min="1" max="10" id="adults" placeholder="2"> 
+                <input type="text" name="human-adults" id="adults" value="" placeholder="2"> 
               </p>
               <p class="find-item">
+                <b class="minus"></b>
+                <b class="plus"></b>
                 <label for="children">Дети:</label>
-                <input type="text" name="human-children" min="0" max="10" id="children" placeholder="0">
+                <input type="text" name="human-children" id="children" value="" placeholder="0">
               </p>
             </div>
-            <a class="button-search" href="results.html" aria-label="Поиск гостиницы на ближайшие даты">Найти</a>
+            <a class="button-search" href="results.html">Найти</a>
           </form>
         </section>
         <section class="map">
