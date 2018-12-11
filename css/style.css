@@ -979,18 +979,15 @@ a {
 .sorting {
     position: relative;
 
-    width: 1200px;
+    display: flex;
     padding-top: 30px;
     padding-bottom: 22px;
+    padding-left: 71.5px;
+    padding-right: 71.5px;
 
     background-color: #fefefe;
 
     border-bottom: 1px solid #e5e5e5;
-}
-
-.sorting .second-container {
-    display: flex;
-
 }
 
 .sorting-parametres {
