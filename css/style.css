@@ -1,11 +1,9 @@
 body {
-    position: relative;
-
     margin: 0;
 
     font-family: "PT Sans", Arial, sans-serif;
-    font-size:14px;
-    font-weight:700;
+    font-size: 14px;
+    font-weight: 700;
     line-height: 21px;
     text-transform: uppercase;
     color: #000000;
@@ -23,10 +21,11 @@ a {
     width: 1200px;
     margin: 0 auto;
 
-    box-shadow:0 0 20px 0 rgba(155, 154, 154, 0.6);
+    box-shadow: 0 0 20px 0 rgba(155, 154, 154, 0.6);
 }
 
 /* index*/
+
 .main-navigation {
     margin: 0 auto;
 
@@ -53,18 +52,19 @@ a {
     width: 200px;
 }
 
-.site-navigation li:nth-child(1n+3) {
-    text-align: right;
-}
-
 .site-navigation li:nth-child(2) {
     margin-right: 68px;
 }
 
 .site-navigation li:nth-child(3) {
     margin-left: 60px;
+    text-align: right;
 
     letter-spacing: 0.2px;
+}
+
+.site-navigation li:last-child {
+    text-align: right;
 }
 
 .main-logo {
@@ -92,7 +92,7 @@ a {
 }
 
 .site-navigation a {
-    color:#000000;
+    color: #000000;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
@@ -107,7 +107,10 @@ a {
     color: #cacaca;
 }
 
-.site-logo {
+.welcome {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     padding-top: 76px;
     padding-bottom: 80px;
 
@@ -117,7 +120,7 @@ a {
 
 }
 
-.site-logo::before {
+.welcome::before {
     content: "";
 
     position: absolute;
@@ -234,10 +237,17 @@ a {
     position: relative;
 
     padding-top: 161px;
+    padding-bottom: 82px;
 }
 
 .services h3 {
     padding-bottom: 24px;
+}
+
+
+.services p {
+    margin: 0 auto;
+    width: 288px;
 }
 
 .services-list:first-of-type h3::before {
@@ -282,12 +292,6 @@ a {
 
     background-image: url(../img/souvenirs.svg);
     background-repeat: no-repeat;
-}
-
-.services p {
-    margin: 0 auto;
-    padding-bottom: 82px;
-    width: 288px;
 }
 
 .features-item .features-continued  {
@@ -446,7 +450,6 @@ a {
 .humans {
     display: flex;
     justify-content: space-between;
-
     width: 460px;
     margin: 0 auto;
     margin-bottom: 54px;
@@ -698,8 +701,11 @@ a {
     font-weight: 700;
     color: #ffffff;
     text-align: center;
+    text-transform: uppercase;
 
     background-color: #81b3d2;
+
+    border: none;
 }
 
 .button-search:hover,
@@ -720,9 +726,12 @@ a {
 .map img {
     vertical-align: middle;
 }
+
 /*index*/
 
+
 /*catalog*/
+
 .active-link a {
     color: #766357;
 }
@@ -838,6 +847,21 @@ a {
     background-repeat: no-repeat;
 }
 
+.input-type + label::before {
+    position: absolute;
+    left: -41px;
+}
+
+.input-type:checked + label::before {
+    position: absolute;
+    left: -41px;
+}
+
+.input-type:hover + label::before {
+    position: absolute;
+    left: -41px;
+}
+
 .filters .output-area {
     position: relative;
 
@@ -917,7 +941,7 @@ a {
 }
 
 .range .bar {
-    height:2px;
+    height: 2px;
     width: 83%;
 
     background-color: #ffffff;
@@ -938,11 +962,11 @@ a {
     cursor: pointer;
 }
   
-  .range-toggle-min {
+.range-toggle-min {
     left: 0;
 }
   
-  .range-toggle-max {
+.range-toggle-max {
     left: 80%;
 }
 
@@ -1094,13 +1118,13 @@ a {
     top: -10px;
     left: -1px;
 
-    border: 5.6px solid transparent; 
+    border: 6px solid transparent; 
     border-bottom: 10px solid #cacaca;
 }
 
 .trinagle .trinagle-up:hover::before,
 .trinagle .trinagle-up:focus::before {
-    border-bottom:10px solid #000000;
+    border-bottom: 10px solid #000000;
 }
 
 .trinagle .trinagle-up:active::before {
@@ -1126,13 +1150,13 @@ a {
     top: -5px;
     left: -12px;
 
-    border: 5.6px solid transparent; 
+    border: 6px solid transparent; 
     border-top: 10px solid #81b3d2;
 }
 
 .trinagle .trinagle-down:hover::before,
 .trinagle .trinagle-down:focus::before {
-    border-top:10px solid #000000;
+    border-top: 10px solid #000000;
 }
 
 .trinagle .trinagle-down:active::before {
@@ -1167,7 +1191,7 @@ a {
     height: 19px;
     width: 90px;
 
-    background-image:url(../img/star.svg);
+    background-image: url(../img/star.svg);
     background-repeat: repeat-x;
 }
 
@@ -1181,7 +1205,7 @@ a {
     height: 19px;
     width: 65px;
 
-    background-image:url(../img/star.svg);
+    background-image: url(../img/star.svg);
     background-repeat: repeat-x;
 }
 
@@ -1195,7 +1219,7 @@ a {
     height: 19px;
     width: 43px;
 
-    background-image:url(../img/star.svg);
+    background-image: url(../img/star.svg);
     background-repeat: repeat-x;
 }
 
@@ -1315,6 +1339,7 @@ a {
 
 
 /* footer */
+
 .main-footer {
     position: absolute;
     bottom: 0;
@@ -1342,7 +1367,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 32px;
     padding-bottom: 35px;
     padding-left: 132px;
     padding-right: 100px;
@@ -1400,7 +1425,7 @@ a {
 }
 
 .social-button:active {
-    background-color:#5496bd;
+    background-color: #5496bd;
 }
 
 .social-button:active path {
@@ -1418,6 +1443,8 @@ a {
 }
 
 .created b{
+    margin-right: 8px;
+
     color: #000000;
     font-size: 14px;
     line-height: 26px;
@@ -1430,8 +1457,7 @@ a {
 
 .created svg {
     padding-top: 6px;
-    margin-left: 8px;
-    height: 41px;
+    height: 42px;
     width: 115px;
 }
 
@@ -1445,7 +1471,9 @@ a {
 
 .visually-hidden {
     position: absolute;
+
     clip: rect(0 0 0 0);
+
     width: 1px;
     height: 1px;
     margin: -1px;

@@ -33,9 +33,14 @@
         </nav>
       </header>
       <main class="container">
-        <div class="site-logo">
-          <img src="img/welcome.svg" width="1200" height="353" alt="Главный логотип сайта Седона">
-        </div>
+        <section class="welcome">
+
+          <h2 class="visually-hidden">Добро пожаловать</h2>
+
+          <div class="site-logo">
+            <img src="img/welcome.svg" width="460" height="353" alt="Главный логотип сайта Седона">
+          </div>
+        </section>
         <div class="reasons">
           <h1>Cедона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -100,7 +105,7 @@
             </li>
           </ul>
         </section>
-        <div class="interesed-offer" aria-label="Укажите преполагаемые даты поездки, если вас заинтересовала Седона">
+        <div class="interesed-offer">
           <b>Заинтересовались?</b>
           <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне </p>
         </div>
@@ -108,11 +113,11 @@
           <h2>
             <a class="button-find" href="date.html" aria-label="Поиск гостиницы">Поиск гостиницы в Седоне</a>        <!--буду поп-ап(ом) делать-->
           </h2>
-          <form class="estimated-dates" action="" method="POST">
+          <form class="estimated-dates" action="https://echo.htmlacademy.ru" method="POST">
             <p class="find-item">
               <label for="arrival-date">Дата заезда:</label>
               <input type="text" name="calendar-arrival" id="arrival-date" value="" placeholder="24 апреля 2017">
-              <button type="submit" class="calendar">
+              <button type="button" class="calendar">
                 <span class="visually-hidden">Календарь</span>
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" fill="#a9a9a9">
@@ -140,7 +145,7 @@
             <p class="find-item">
               <label for="departure-date">Дата выезда:</label>
               <input type="text" name="calendar-departure" id="date-departure" value="" placeholder="4 июля 2017">
-              <button type="submit">
+              <button type="button">
                 <span class="visually-hidden">Календарь</span>
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" fill="#a9a9a9">
@@ -167,19 +172,19 @@
             </p>
             <div class="humans">
               <p class="find-item">
-                <button type="submit" class="minus"><span class="visually-hidden">Убавить</span></button>
-                <button type="submit" class="plus"><span class="visually-hidden">Прибавить</span></button>
+                <button type="button" class="minus"><span class="visually-hidden">Убавить</span></button>
+                <button type="button" class="plus"><span class="visually-hidden">Прибавить</span></button>
                 <label for="adults">Взрослые:</label>
                 <input type="text" name="human-adults" id="adults" value="" placeholder="2"> 
               </p>
               <p class="find-item">
-                <button type="submit" class="minus"><span class="visually-hidden">Убавить</span></button>
-                <button type="submit" class="plus"><span class="visually-hidden">Прибавить</span></button>
+                <button type="button" class="minus"><span class="visually-hidden">Убавить</span></button>
+                <button type="button" class="plus"><span class="visually-hidden">Прибавить</span></button>
                 <label for="children">Дети:</label>
                 <input type="text" name="human-children" id="children" value="" placeholder="0">
               </p>
             </div>
-            <a class="button-search" href="results.html">Найти</a>
+            <button class="button-search" type="submit">Найти</a>
           </form>
         </section>
         <section class="map">
