@@ -114,6 +114,21 @@ a {
     background-color: #81b4d3;
     background-image: url(../img/background-photo.jpg);
     background-repeat: no-repeat;
+
+}
+
+.site-logo::before {
+    content: "";
+
+    position: absolute;
+    top: 507px;
+
+    display: block;
+    width: 1200px;
+    height: 59px;
+
+    background-image: url(../img/polygon.png);
+    background-repeat: no-repeat;
 }
 
 .site-logo img {
@@ -448,7 +463,6 @@ a {
     right: 10px;
 }
 
-
 .find-item svg:hover,
 .find-item svg:focus {
     fill: #000000;
@@ -735,7 +749,7 @@ a {
     margin-right: 112px;
     padding: 0;
     padding-top: 25px;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
 
     border: none;
 }
