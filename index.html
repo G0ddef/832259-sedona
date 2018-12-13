@@ -33,14 +33,11 @@
         </nav>
       </header>
       <main class="container">
-        <section class="welcome">
-
-          <h2 class="visually-hidden">Добро пожаловать</h2>
-
+        <div class="welcome">
           <div class="site-logo">
             <img src="img/welcome.svg" width="460" height="353" alt="Главный логотип сайта Седона">
           </div>
-        </section>
+        </div>
         <div class="reasons">
           <h1>Cедона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -111,11 +108,11 @@
         </div>
         <section class="find-hotels">
           <h2>
-            <a class="button-find" href="date.html" aria-label="Поиск гостиницы">Поиск гостиницы в Седоне</a>        <!--буду поп-ап(ом) делать-->
+            <a class="button-find" href="date.html">Поиск&nbsp;гостиницы&nbsp;в&nbsp;Седоне</a>        <!--Кривое отображение в IE11-->
           </h2>
           <form class="estimated-dates" action="https://echo.htmlacademy.ru" method="POST">
             <p class="find-item">
-              <label for="arrival-date">Дата заезда:</label>
+              <label for="arrival-date">Дата заезда:</label>  <!--Кривое отображение в IE11-->
               <input type="text" name="calendar-arrival" id="arrival-date" value="" placeholder="24 апреля 2017">
               <button type="button" class="calendar">
                 <span class="visually-hidden">Календарь</span>
@@ -143,7 +140,7 @@
               </button> 
             </p>
             <p class="find-item">
-              <label for="departure-date">Дата выезда:</label>
+              <label for="departure-date">Дата выезда:</label>   <!--Кривое отображение в IE11-->
               <input type="text" name="calendar-departure" id="date-departure" value="" placeholder="4 июля 2017">
               <button type="button">
                 <span class="visually-hidden">Календарь</span>
@@ -172,14 +169,22 @@
             </p>
             <div class="humans">
               <p class="find-item">
-                <button type="button" class="minus"><span class="visually-hidden">Убавить</span></button>
-                <button type="button" class="plus"><span class="visually-hidden">Прибавить</span></button>
+                <button type="button" class="minus">
+                  <span class="visually-hidden">Убавить</span>
+                </button>
+                <button type="button" class="plus">
+                  <span class="visually-hidden">Прибавить</span>
+                </button>
                 <label for="adults">Взрослые:</label>
                 <input type="text" name="human-adults" id="adults" value="" placeholder="2"> 
               </p>
               <p class="find-item">
-                <button type="button" class="minus"><span class="visually-hidden">Убавить</span></button>
-                <button type="button" class="plus"><span class="visually-hidden">Прибавить</span></button>
+                <button type="button" class="minus">
+                  <span class="visually-hidden">Убавить</span>
+                </button>
+                <button type="button" class="plus">
+                  <span class="visually-hidden">Прибавить</span>
+                </button>
                 <label for="children">Дети:</label>
                 <input type="text" name="human-children" id="children" value="" placeholder="0">
               </p>

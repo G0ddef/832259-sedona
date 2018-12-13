@@ -23,7 +23,7 @@
               <li>
                 <a href="map.html">Карта штата</a>
               </li>
-              <li class="active-link">
+              <li>
                 <a>Гостиницы</a>
               </li>
             </ul>
@@ -40,15 +40,15 @@
               <legend>Инфраструктура:</legend>
               <ul class="required-options">
                 <li class="required-item">
-                  <input type="checkbox" class="input-checkbox" name="Pool" id="pool" checked>
+                  <input type="checkbox" class="visually-hidden input-checkbox" name="Pool" id="pool" checked>
                   <label for="pool">Бассейн</label>
                 </li>
                 <li class="required-item">
-                  <input type="checkbox" class="input-checkbox" name="Parking" id="parking">
+                  <input type="checkbox" class="visually-hidden input-checkbox" name="Parking" id="parking">
                   <label for="parking">Парковка</label>
                 </li>
                 <li class="required-item">
-                  <input type="checkbox" class="input-checkbox" name="wi-fi" id="wi-fi">
+                  <input type="checkbox" class="visually-hidden input-checkbox" name="wi-fi" id="wi-fi">
                   <label for="wi-fi">WI-FI</label>
                 </li>
               </ul>
@@ -57,15 +57,15 @@
               <legend>Тип жилья:</legend>
                 <ul class="required-options">
                   <li class="required-item">
-                    <input type="checkbox" class="input-type input-checkbox" name="hotel" id="hotel" checked>
+                    <input type="checkbox" class="visually-hidden input-type input-checkbox" name="hotel" id="hotel" checked>
                     <label for="hotel">Гостиница</label>
                   </li>
                   <li class="required-item">
-                    <input type="checkbox" class="input-type input-checkbox" name="motel" id="motel" checked>
+                    <input type="checkbox" class="visually-hidden input-type input-checkbox" name="motel" id="motel" checked>
                     <label for="motel">Мотель</label>
                   </li>
                   <li class="required-item">
-                    <input type="checkbox" class="input-type input-checkbox" name="apartaments" id="apartaments" checked>
+                    <input type="checkbox" class="visually-hidden input-type input-checkbox" name="apartaments" id="apartaments" checked>
                     <label for="apartaments">Апартаменты</label>
                   </li>
                 </ul>
@@ -74,11 +74,11 @@
               <legend>Стоимость в сутки (Р):</legend>
                 <ul class="output-area">
                   <li class="output">
-                    <label class="visually-hidden" for="price-before">От </label>
+                    <label class="visually-hidden" for="price-before">Цена от</label>
                     <input type="text" id="price-before" value="" placeholder="От 0">
                   </li>
                   <li class="output">
-                    <label class="visually-hidden" for="price-after">До </label>
+                    <label class="visually-hidden" for="price-after">Цена до</label>
                     <input type="text" id="price-after" value="" placeholder="До 3000">
                   </li>
                 </ul>
@@ -86,8 +86,8 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="range-toggle range-toggle-min"></div>
-                  <div class="range-toggle range-toggle-max"></div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
                 </div>
             </fieldset>
             <button type="submit" class="btn-view">Показать</button>
@@ -113,11 +113,11 @@
               </ul>
             </div>
             <div class="trinagle">
-              <p class="trinagle-up">
-                <a href="#" class="visually-hidden"> По возрастанию</a>
+              <p> 
+                <a href="#" class="visually-hidden trinagle-up"></a>
               </p>
-              <p class="trinagle-down">
-                <a href="#" class="visually-hidden"> По убыванию</a>
+              <p>
+                <a href="#" class="visually-hidden trinagle-down"></a>
               </p>
             </div>
           </div>
