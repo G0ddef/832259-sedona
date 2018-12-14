@@ -427,9 +427,9 @@ a {
     display: block;
     margin: 0 auto;
     padding: 30px 139px;
-    width: 290px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    width: 568px;
+        -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 
     font-size: 21px;
     line-height: 26px;
@@ -532,7 +532,7 @@ a {
     border: none;
 }
 
-.find-item  input {
+.find-item  .input-text {
     -webkit-box-sizing: border-box;
         box-sizing: border-box;
     padding: 9px 0;
@@ -550,13 +550,13 @@ a {
     border: 2px solid #f2f2f2;
 }
 
-.find-item input[name$="arrival"] {
+.find-item .input-arrival {
     padding-left: 11px;
     padding-right: 28px;
     width: 346px;
 }
 
-.find-item input[name$="departure"] {
+.find-item .input-departure {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 11px;
@@ -564,7 +564,7 @@ a {
     width: 346px;
 }
 
-.find-item input[name$="adults"] {
+.find-item .input-adults {
     margin-left: 41px;
     padding-left: 23px;
     padding-right: 23px;
@@ -573,7 +573,7 @@ a {
     text-align: center;
 }
 
-.find-item input[name$="children"] {
+.find-item .input-children {
     margin-left: 26px;
     padding-left: 23px;
     padding-right: 23px;

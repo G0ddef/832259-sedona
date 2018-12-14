@@ -113,7 +113,7 @@
           <form class="estimated-dates" action="https://echo.htmlacademy.ru" method="POST">
             <p class="find-item">
               <label for="arrival-date">Дата заезда:</label>  <!--Кривое отображение в IE11-->
-              <input type="text" name="calendar-arrival" id="arrival-date" value="" placeholder="24 апреля 2017">
+              <input type="text" class="input-text input-arrival" id="arrival-date" placeholder="24 апреля 2017">
               <button type="button" class="calendar">
                 <span class="visually-hidden">Календарь</span>
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -141,7 +141,7 @@
             </p>
             <p class="find-item">
               <label for="departure-date">Дата выезда:</label>   <!--Кривое отображение в IE11-->
-              <input type="text" name="calendar-departure" id="date-departure" value="" placeholder="4 июля 2017">
+              <input type="text" class="input-text input-departure" id="date-departure" placeholder="4 июля 2017">
               <button type="button">
                 <span class="visually-hidden">Календарь</span>
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -176,7 +176,7 @@
                   <span class="visually-hidden">Прибавить</span>
                 </button>
                 <label for="adults">Взрослые:</label>
-                <input type="text" name="human-adults" id="adults" value="" placeholder="2"> 
+                <input type="text" class="input-text input-adults" id="adults" value="" placeholder="2"> 
               </p>
               <p class="find-item">
                 <button type="button" class="minus">
@@ -186,7 +186,7 @@
                   <span class="visually-hidden">Прибавить</span>
                 </button>
                 <label for="children">Дети:</label>
-                <input type="text" name="human-children" id="children" value="" placeholder="0">
+                <input type="text" class="input-text input-children" id="children" value="" placeholder="0">
               </p>
             </div>
             <button class="button-search" type="submit">Найти</a>
