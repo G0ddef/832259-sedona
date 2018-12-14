@@ -427,7 +427,7 @@ a {
     display: block;
     margin: 0 auto;
     padding: 30px 139px;
-    width: 568px;
+    width: 569px;
         -webkit-box-sizing: border-box;
             box-sizing: border-box;
 
@@ -458,7 +458,7 @@ a {
 
     display: -ms-flexbox;
 
-    display: flex;
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -474,6 +474,20 @@ a {
     -webkit-box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.140);
 
             box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.140);
+
+    animation: modal-close 0.5s;
+}
+
+.form-show {
+    display: flex;
+
+    animation: modal 0.5s;
+}
+
+@keyframes modal {
+    0% {
+        transform: translateX(-2000px);
+    }
 }
 
 .estimated-dates .find-item {
@@ -493,7 +507,8 @@ a {
     margin: 0 auto;
     margin-bottom: 29px;
     width: 458px;
-    overflow: hidden;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 
     font-size: 14px;
     line-height: 26px;
@@ -514,7 +529,7 @@ a {
     margin: 0 auto;
     margin-bottom: 54px;
     width: 458px;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .humans .find-item {
@@ -548,6 +563,10 @@ a {
     background-color: #f2f2f2;
 
     border: 2px solid #f2f2f2;
+}
+
+.find-item .error {
+    background-color: #d6d3d3;
 }
 
 .find-item .input-arrival {
