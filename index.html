@@ -266,9 +266,9 @@
         searchform.addEventListener("submit", function (evt) {
           if (!arrival.value || !departure.value || !adults.value) {
             evt.preventDefault();
-            arrival.classList.add("error")
-            departure.classList.add("error")
-            adults.classList.add("error")
+            arrival.classList.add("form-error")
+            departure.classList.add("form-error")
+            adults.classList.add("form-error")
           }
         }) 
     </script>

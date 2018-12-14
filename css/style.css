@@ -490,6 +490,10 @@ a {
     }
 }
 
+.form-error {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
 .estimated-dates .find-item {
     position: relative;
 
@@ -563,10 +567,6 @@ a {
     background-color: #f2f2f2;
 
     border: 2px solid #f2f2f2;
-}
-
-.find-item .error {
-    background-color: #d6d3d3;
 }
 
 .find-item .input-arrival {
