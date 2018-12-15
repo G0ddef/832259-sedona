@@ -454,17 +454,7 @@ a {
     position: absolute;
     left: 316px;
 
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
     display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     padding-top: 55px;
     padding-bottom: 55px;
     width: 568px;
@@ -479,14 +469,24 @@ a {
 }
 
 .form-show {
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 
     animation: modal 0.5s;
 }
 
 @keyframes modal {
     0% {
-        transform: translateX(-2000px);
+        transform: translateY(60px);
     }
 }
 
@@ -525,7 +525,9 @@ a {
 
 .humans {
     display: -webkit-box;
+
     display: -ms-flexbox;
+
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1146,7 +1148,9 @@ a {
     position: relative;
 
     display: -webkit-box;
+
     display: -ms-flexbox;
+
     display: flex;
     padding-top: 30px;
     padding-bottom: 26px;
@@ -1160,7 +1164,9 @@ a {
 
 .sorting-parametres {
     display: -webkit-box;
+
     display: -ms-flexbox;
+
     display: flex;
     margin: 0;
     padding-top: 6px;
