@@ -464,8 +464,6 @@ a {
     -webkit-box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.140);
 
             box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.140);
-
-    animation: modal-close 0.5s;
 }
 
 .form-show {
