@@ -875,7 +875,7 @@ a {
 
 .hotel-filter .options {
     margin: 0;
-    margin-right: 112px;
+    margin-right: 119px;
     padding: 0;
     padding-top: 25px;
     padding-bottom: 6px;
@@ -907,7 +907,7 @@ a {
 }
 
 .options:nth-child(2) > .required-options {
-    margin-left: 5px;
+    margin-left: 2px;
 }
 
 .input-checkbox + label {
@@ -1123,8 +1123,12 @@ a {
     bottom: 33px;
     right: 96px;
 
-    height: 36px;
-    padding: 5px 30px;
+    padding-top: 6px;
+    padding-bottom: 5px;;
+    padding-left: 33px;
+    padding-right: 33px;
+    width: 137px;
+    box-sizing: border-box;
 
     color: #ffffff;
     font-size: 14px;
