@@ -936,6 +936,36 @@ a {
     background-repeat: no-repeat;
 }
 
+.input-checkbox:not(:disabled) + label:hover::before {
+    content: "";
+
+    position: absolute;
+    left: -39px;
+    bottom: -1px;
+
+    display: block;
+    height: 23px;
+    width: 27px;
+
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+}
+
+.input-checkbox:disabled + label::before {
+    content: "";
+
+    position: absolute;
+    left: -39px;
+    bottom: -1px;
+
+    display: block;
+    height: 23px;
+    width: 27px;
+
+    background-image: url(../img/checkbox-disabled.svg);
+    background-repeat: no-repeat;
+}
+
 .input-checkbox:checked + label::before {
     content: "";
 
@@ -951,7 +981,7 @@ a {
     background-repeat: no-repeat;
 }
 
-.input-checkbox + label:hover::before {
+.input-checkbox:checked:not(:disabled) + label:hover::before {
     content: "";
 
     position: absolute;
@@ -966,7 +996,27 @@ a {
     background-repeat: no-repeat;
 }
 
+.input-checkbox:checked:disabled + label::before {
+    content: "";
+
+    position: absolute;
+    left: -39px;
+    bottom: -1px;
+
+    display: block;
+    height: 23px;
+    width: 27px;
+
+    background-image: url(../img/checkbox-on-disabled.svg);
+    background-repeat: no-repeat;
+}
+
 .input-type + label::before {
+    position: absolute;
+    left: -41px;
+}
+
+.input-type:not(:disabled) + label:hover::before {
     position: absolute;
     left: -41px;
 }
@@ -976,8 +1026,17 @@ a {
     left: -41px;
 }
 
-.input-type:hover + label::before,
-.input-type:focus + label::before {
+.input-type:checked:not(:disabled) + label:hover::before {
+    position: absolute;
+    left: -41px;
+}
+
+.input-type:disabled + label::before {
+    position: absolute;
+    left: -41px;
+}
+
+.input-type:checked:disabled + label::before {
     position: absolute;
     left: -41px;
 }
