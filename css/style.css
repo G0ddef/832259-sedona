@@ -45,9 +45,7 @@ a {
 
 .site-navigation {
     display: -webkit-box;
-
     display: -ms-flexbox;
-    
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -97,9 +95,7 @@ a {
 
 .container-inner {
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -130,9 +126,7 @@ a {
     position: relative;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -205,9 +199,7 @@ a {
 
 .features-list {
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -227,9 +219,7 @@ a {
 
 .features-item {
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
 
     text-align: center;
@@ -238,9 +228,7 @@ a {
 .features-item:nth-child(1),
 .features-item:nth-child(2) {
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -266,9 +254,7 @@ a {
 
 .services {
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -345,9 +331,7 @@ a {
 
 .features-item .features-continued  {
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     padding: 0;
     padding-top: 46px;
@@ -484,9 +468,7 @@ a {
 
 .form-show {
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -512,9 +494,7 @@ a {
     position: relative;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -539,9 +519,7 @@ a {
 
 .humans {
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -878,9 +856,7 @@ a {
     position: relative;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     width: 1057px;
     margin: 0 auto;
@@ -1225,9 +1201,7 @@ a {
     position: relative;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     padding-top: 30px;
     padding-bottom: 26px;
@@ -1241,9 +1215,7 @@ a {
 
 .sorting-parametres {
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     margin: 0;
     padding-top: 6px;
@@ -1418,9 +1390,7 @@ a {
     position: relative;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     padding: 30px 72px;
 
@@ -1608,9 +1578,7 @@ a {
 
 .main-footer .container {
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1626,9 +1594,7 @@ a {
 
 .inner-footer .container {
     display: -webkit-box;
-
     display: -ms-flexbox;
-    
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1671,9 +1637,7 @@ a {
 
 .footer-social ul {
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1687,9 +1651,7 @@ a {
 
 .social-button {
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1718,9 +1680,7 @@ a {
 
 .created {
     display: -webkit-box;
-
     display: -ms-flexbox;
-    
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
